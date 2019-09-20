@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  mode: "development",
+  mode: "production",
   entry: {
     comboBox: './src/comboBox.js',
   },

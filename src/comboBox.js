@@ -54,7 +54,7 @@ export function comboBox(opts = {}) {
       obj.select = opts.select;
       const options = opts.select.options;
       opts.select.style.display = 'none';
-      opts.select.parentElement.insertBefore(div, opts.element);
+      opts.select.parentElement.insertBefore(div, opts.select);
 
       for (let i = 0; i < options.length; ++i) {
 
