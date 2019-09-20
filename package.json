@@ -1,6 +1,6 @@
 {
-  "name": "html-select-tag",
-  "version": "1.0.0",
+  "name": "html-combobox",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
