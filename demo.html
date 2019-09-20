@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select demo</title>
+</head>
+
+<body>
+    <select id="selectel">
+        <optgroup>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            <option value="4">four</option>
+        </optgroup>
+    </select>
+
+    <button onclick="getval()">get val</button>
+
+    <script src="./dist/comboBox.js"></script>
+    <script>
+        const sel = comboBox({
+            height: 30,
+            maxheight: 300,
+            select: selectel,
+            width: 400
+        });
+
+        function getval() {
+            alert(sel.value());
+        }
+    </script>
+</body>
+
+</html>
