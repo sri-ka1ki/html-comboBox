@@ -1,4 +1,4 @@
-# html-comboBox
+# html-comboBox (select)
 
 Creates a toggle button equivalent to input type checkbox or radio
 
