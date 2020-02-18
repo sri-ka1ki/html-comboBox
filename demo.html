@@ -9,31 +9,30 @@
 </head>
 
 <body>
-  
-    <select id="selectel">
-        <optgroup>
-            <option value="1">one</option>
-            <option value="2">two</option>
-            <option value="3">three</option>
-            <option value="4">four</option>
-        </optgroup>
-    </select>
+  <select id="selectel">
+      <optgroup>
+          <option value="1">one</option>
+          <option value="2">two</option>
+          <option value="3">three</option>
+          <option value="4">four</option>
+      </optgroup>
+  </select>
 
-    <button onclick="getval()">get val</button>
+  <button onclick="getval()">get val</button>
 
-    <script src="./dist/comboBox.js"></script>
-    <script>
-        const sel = comboBox({
-            height: 30,
-            maxheight: 300,
-            select: selectel,
-            width: 250
-        });
+  <script src="./dist/comboBox.js"></script>
+  <script>
+      const sel = comboBox({
+          height: 30,
+          maxheight: 300,
+          select: selectel,
+          width: 250
+      });
 
-        function getval() {
-            alert(sel.value());
-        }
-    </script>
+      function getval() {
+          alert(sel.value());
+      }
+  </script>
 </body>
 
 </html>
