@@ -1,6 +1,6 @@
 # html-comboBox (select)
 
-Creates a toggle button equivalent to input type checkbox or radio
+Creates a combobox equivalent to html select tag
 
 ```javascript
 const combobox = comboBox({
