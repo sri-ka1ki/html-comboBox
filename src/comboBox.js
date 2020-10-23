@@ -96,21 +96,21 @@ export function comboBox(opts = {}) {
   function onkeydown(e) {
     e.preventDefault();
     let id;
-    if (e.which === 38) {
+    if (e.key === "ArrowUp") {
       let option = selectOption.previousElementSibling;
       if (option) {
         id = option.getAttribute('data-id');
       } else {
         id = selectOption.parentElement.lastElementChild.getAttribute('data-id');
       }
-    } else if (e.which === 40) {
+    } else if (e.key === "ArrowDown") {
       let option = selectOption.nextElementSibling;
       if (option) {
         id = option.getAttribute('data-id');
       } else {
         id = selectOption.parentElement.firstElementChild.getAttribute('data-id');
       }
-    } else if (e.which === 13) {
+    } else if (e.key === "Enter") {
       toggle();
     }
     if (id) {
